@@ -51,7 +51,7 @@ body{
 }
 .button_primary:hover{
     cursor: pointer;
-    border: solid 2px pink;
+    
 }
 .navbar{
     background-color: #fff;
@@ -64,20 +64,26 @@ body{
 .hero_image_container{
     width: 100%;
     position: relative;
+    
 }
 .hero_image{
     width:100%;
     border-radius: 8px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     z-index: 5;
+    padding-top: 50px ;
     
 }
 .hero_description{
     width: 100%;
+    
+    
 }
 .hero_text{
     font-size: 30px;
     margin-top: 20px 0px;
+    padding-top: 60px;
+    margin-bottom: 20px;
 }
 .bg1{
     position: absolute;
@@ -86,9 +92,27 @@ body{
     z-index: -1; 
 }
 
-
-
-
+.explore_menu_text{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 25px ;
+    text-align: center;
+}
+.food_card{
+    background-color: #fff;
+    border-radius: 8px ;
+    margin-bottom:15px ;
+}
+.food_card_image_container{
+    width: 100%;
+}
+.food_image{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.food_card_description{
+    padding: 15px;
+}
 
 @media (min-width: 768px){
     .navbar{
@@ -101,6 +125,47 @@ body{
         align-items: center;
         margin-top: 40px;
         
+    }
+    
+    .explore_menu_lists{
+        display: flex;
+        gap: 15px;
+        margin-top: 40px;
+        padding: 0 30px;
+        
+    }
+    .explore_menu_text{
+        font-size: 50px;
+    }
+    #pizza_card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .explore_menu_view_more{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .explore_menu_container{
+        position: relative;
+    }
+
+    .explore_menu_gradient_bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
+
     }
     
 }
@@ -120,6 +185,10 @@ body{
     .hero_text{
         font-size: 50px;
         margin-bottom: 10px;
+    }
+    .explore_menu_lists{
+        gap: 40px;
+        
     }
 }
 
